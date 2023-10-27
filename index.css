@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
-
+.more{
+    display: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -29,6 +31,8 @@ h1{
     border-radius: 10px;
     background-color: white;
     margin-top: 20px;
+    
+    
 }
 .box-1 h2{
     color:#6A0DAD;
@@ -60,11 +64,14 @@ h1{
 }
 
 #textToToggle, #textToToggle1, #textToToggle2  {
-    display: none; /* Initially, the text is visible */
+    display: none; /* Initially, the text is invisible */
 }
 
 @media (min-width: 600px){
-    .container{
+    .more{
+        display: none;
+    }
+    .container,.container-1{
         display: flex;
         
     }
